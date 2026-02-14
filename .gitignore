@@ -1,0 +1,28 @@
+# ---- Secrets / sessions ----
+session.json
+*.session.json
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+
+# ---- Logs ----
+*.log
+logs/
+*.out
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
