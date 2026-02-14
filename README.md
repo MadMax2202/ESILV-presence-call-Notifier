@@ -18,6 +18,10 @@ This project was built to prevent missed attendance confirmations by automatical
 
 🖥 Works locally, on Windows startup, Raspberry Pi, or cloud server
 
+📲 Optional Telegram alerts (perfect for Raspberry Pi / cloud deployments) (very useful - Recommended)
+
+🔊 Optional sound alert (make the notification play a sound)
+
 ## 🧠 How It Works
 
 - Fetch daily schedule from: /student/presences/
@@ -36,15 +40,7 @@ At class start time:
 
 ## 🏗 Architecture
 
-Scheduler
-   ↓
-Fetch schedule
-   ↓
-Polling loop
-   ↓
-Presence page check
-   ↓
-Notification
+Scheduler → Fetch schedule → Polling loop → Presence page check → Notification
 
 
 ## Uses:
@@ -60,17 +56,17 @@ Plyer → desktop notifications
 
 ### You must save an authenticated session once.
 
-Run: python save_session.py
+- Run: python save_session.py
 
-Browser opens
+- Browser opens
 
-Log into ESILV portal
+- Log into ESILV portal
 
-Press ENTER in terminal
+- Press ENTER in terminal
 
-session.json is saved
+- session.json is saved
 
-This allows the bot to stay logged in.
+- This allows the bot to stay logged in.
 
 ## ▶️ Running the Bot
 python presence_notifier.py
@@ -302,4 +298,5 @@ Always follow your institution’s policies regarding presence validation.
 ## 👨‍💻 Author
 
 Maxim Grossmann
+
 AI & Data Science Student — ESILV
